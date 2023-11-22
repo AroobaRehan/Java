@@ -1,0 +1,43 @@
+interface Animal{
+    void eat();
+    void travel();
+}
+    
+class Reptiles implements Animal{
+     public void eat(){
+       System.out.println("Frogs eat insects such as moths");
+     }
+     public void travel(){
+        System.out.println("Reptiles usually live on dry land");
+     }
+}
+class Bird implements Animal{
+    public void eat(){
+        System.out.println("Birds eat worms");
+    }
+    public void travel(){
+        System.out.println("Bird");
+    }
+}
+class Fish implements Animal{
+    public void eat(){
+        System.out.println("Fishes also eat plankton");
+    }
+    public void travel(){
+        System.out.println("Fish");
+    }
+}
+
+public class Animals{
+    public static void main(String[] args) {
+        Reptiles r = new Reptiles();
+        r.eat();
+        r.travel();
+        Bird b = new Bird();
+        b.eat();
+        b.travel();
+        Fish fish = new Fish();
+        fish.eat();
+        fish.travel();
+    }
+}
