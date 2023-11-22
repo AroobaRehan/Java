@@ -1,0 +1,53 @@
+public class Rectangle {
+    private double length;
+    private double breadth;
+
+
+    public Rectangle() {
+        length = 0.0;
+        breadth = 0.0;
+        
+    }
+
+    public Rectangle(double length, double breadth) {
+        this.length = length;
+        this.breadth = breadth;
+        
+    }
+
+    // Accessors
+    public double getlength() {
+        return length;
+    }
+
+    public double getbreadth() {
+        return breadth;
+    }
+
+    // Mutators
+    public void setlength(double length) {
+        this.length = length;
+    }
+
+    public void setbreadth(double breadth) {
+        this.breadth = breadth;
+    }
+}
+    
+
+    public static void main(String[] args) {
+        Rectangle rectangle1 = new Rectangle(); // Creating a Rectangle object using the non-parameterized constructor
+        Rectangle rectangle2 = new Rectangle(6.0, 8.0); // Creating a Rectangle object using the parameterized constructor
+
+        System.out.println("Length of rectangle_1: " + rectangle_1.getlength());
+        System.out.println("Breadth of rectangle_1: " + rectangle_1.getbreadth());
+
+        System.out.println("Length of rectangle_2: " + rectangle_2.getlength());
+        System.out.println("Breadth of rectangle_2: " + rectangle_2.getbreadth());
+
+        rectangle1.setlength(7.0);
+        rectangle1.setbreadth(5.0);
+
+        System.out.println("Updated length of rectangle_1: " + rectangle_1.getlength());
+        System.out.println("Updated breadth of rectangle_1: " + rectangle_1.getbreadth());
+    }
